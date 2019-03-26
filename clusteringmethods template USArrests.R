@@ -14,6 +14,7 @@ library("cluster")
 library("factoextra")
 library("ggplot2")
 library("magrittr")
+library("pylr")
 
 #---------------------------------------------------------------------------
 
@@ -56,7 +57,7 @@ pam.res <- pam(my_data, 3) #PAM clustering method
 fviz_cluster(pam.res) # Visualize
 #--------------------------------------------------------------------------
 
-#hierarchical clustering !!!code works not yet!!!
+#hierarchical clustering
 ########################
 
 res.hc <- USArrests %>%          # Compute hierarchical clustering
